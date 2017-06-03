@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSearch", "CodeSearch\CodeSearch.csproj", "{4864D179-D936-421F-A80B-ED5486C97B3C}"
+EndProject
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "Crawler", "crawler\Crawler.mdproj", "{AA2FCCFC-C6F4-40BF-9BB3-1AE5AE363B09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		Default|Any CPU = Default|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4864D179-D936-421F-A80B-ED5486C97B3C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4864D179-D936-421F-A80B-ED5486C97B3C}.Debug|x86.Build.0 = Debug|Any CPU
+		{4864D179-D936-421F-A80B-ED5486C97B3C}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{4864D179-D936-421F-A80B-ED5486C97B3C}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{4864D179-D936-421F-A80B-ED5486C97B3C}.Release|x86.ActiveCfg = Release|Any CPU
+		{4864D179-D936-421F-A80B-ED5486C97B3C}.Release|x86.Build.0 = Release|Any CPU
+		{AA2FCCFC-C6F4-40BF-9BB3-1AE5AE363B09}.Debug|x86.ActiveCfg = Default|Any CPU
+		{AA2FCCFC-C6F4-40BF-9BB3-1AE5AE363B09}.Debug|x86.Build.0 = Default|Any CPU
+		{AA2FCCFC-C6F4-40BF-9BB3-1AE5AE363B09}.Default|Any CPU.ActiveCfg = Default|Any CPU
+		{AA2FCCFC-C6F4-40BF-9BB3-1AE5AE363B09}.Default|Any CPU.Build.0 = Default|Any CPU
+		{AA2FCCFC-C6F4-40BF-9BB3-1AE5AE363B09}.Release|x86.ActiveCfg = Default|Any CPU
+		{AA2FCCFC-C6F4-40BF-9BB3-1AE5AE363B09}.Release|x86.Build.0 = Default|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.BeforeMethodDeclarationParentheses = False
+		$2.BeforeConstructorDeclarationParentheses = False
+		$2.BeforeIndexerDeclarationBracket = False
+		$2.BeforeDelegateDeclarationParentheses = False
+		$2.AfterDelegateDeclarationParameterComma = True
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+	EndGlobalSection
+EndGlobal

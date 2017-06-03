@@ -1,0 +1,5 @@
+# http://bit.ly/2r5i6Fy
+
+beautifulsoup4==4.6.0
+
+## Also MySQLdb: http://bit.ly/2qAeub7
