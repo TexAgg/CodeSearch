@@ -16,9 +16,9 @@ namespace CodeSearch.Models
 		public string content { get; set; }
 
 		[Column("payload_digest")]
-		public string payloadDigest { get; set; }
+		public string payload_digest { get; set; }
 
 		[Column("last_updated")]
-		public string lastUpdated { get; set; }
+		public string last_updated { get; set; }
 	}
 }

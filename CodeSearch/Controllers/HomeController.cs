@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
 using CodeSearch.Contexts;
+using MySql.Data.MySqlClient;
 
 namespace CodeSearch.Controllers
 {
@@ -39,6 +40,11 @@ namespace CodeSearch.Controllers
 			ViewData["q"] = q;
 
 			// Run stored procedure on query.
+			// https://stackoverflow.com/a/14264829/5415895
+			// https://stackoverflow.com/a/39063015/5415895
+			//SqlParameter parameter1 = new SqlParameter ("@Parameter1", q);
+			//MySqlParameter parameter1 = ;
+			List<Models.Code> results = _context.Database.SqlQuery<Models.Code>("CALL codesearch(@q)", new MySqlParameter("@q", q)).ToList();
 
 			return View();
 		}
