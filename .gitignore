@@ -1,6 +1,7 @@
 
 # Added by me
 
+.vscode/
 .DS_STORE
 ## Data
 data/
