@@ -20,5 +20,8 @@ namespace CodeSearch.Models
 
 		[Column("last_updated")]
 		public string last_updated { get; set; }
+
+		[Column("crawl_date")]
+		public DateTime crawl_date { get; set; }
 	}
 }
