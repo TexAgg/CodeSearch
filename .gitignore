@@ -1,7 +1,7 @@
 
 # Added by me
 
-.vscode/
+.vscode/*
 .DS_STORE
 ## Data
 data/
