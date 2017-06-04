@@ -1,4 +1,6 @@
-﻿<nav class="navbar navbar-default navbar-fixed-top">
+﻿@model List<CodeSearch.Models.Code>
+
+<nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
 		<form class="form-inline" action="@Url.Action("Search", "Home")" method="get">
 			<div class="input-group" style="width:100%;">
@@ -10,3 +12,22 @@
 		</form>
 	</div>
 </nav>
+
+@* Display results *@
+<div class="container">
+	<ul class="list-group">
+	@foreach(var i in @Model)
+	{
+		<li class="list-group-item">
+			<h4><a href="@i.url">@i.url</a></h4>
+			<div>
+				<pre>@i.content</pre>
+			</div>
+		</li>
+	}
+	@if(@Model.Count == 0)
+	{
+		<h3>No results!</h3>
+	}
+	</ul>
+</div>

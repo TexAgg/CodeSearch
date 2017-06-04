@@ -46,7 +46,7 @@ namespace CodeSearch.Controllers
 			//MySqlParameter parameter1 = ;
 			List<Models.Code> results = _context.Database.SqlQuery<Models.Code>("CALL codesearch(@q)", new MySqlParameter("@q", q)).ToList();
 
-			return View();
+			return View(results);
 		}
 	}
 }
