@@ -4,11 +4,11 @@ using CodeSearch.Models;
 
 namespace CodeSearch.Contexts
 {
-	public class CodeContext: DbContext
+	public class AppContext: DbContext
 	{
 		public DbSet<Code> Codes { get; set; }
 
-		public CodeContext(): base("name=db")
+		public AppContext(): base("name=db")
 		{
 		}
 	}

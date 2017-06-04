@@ -1,13 +1,12 @@
-﻿@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Search</title>
-</head>
-<body>
-</body>
-</html>
-
+﻿<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<form class="form-inline" action="@Url.Action("Search", "Home")" method="get">
+			<div class="input-group" style="width:100%;">
+				<input id="main-input" value=@ViewBag.q maxlength="2048" name="q" type="text" autocomplete="off" class="form-control">
+				 <span class="input-group-btn">
+	        		<button class="btn btn-default" type="submit">Go!</button>
+	      		</span>
+			</div>
+		</form>
+	</div>
+</nav>
